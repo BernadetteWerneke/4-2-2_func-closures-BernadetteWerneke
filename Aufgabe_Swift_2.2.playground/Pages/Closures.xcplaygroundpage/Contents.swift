@@ -15,4 +15,29 @@ let movies = ["Hangover": 7.7,
               "Scary Movie": 6.2,
               "Pulp Fiction": 8.9]
 
+//3.1
+var showFavMovie = {
+    print("Mein Lieblings Film ist Kungfu Panda.")
+}
+showFavMovie()
+
+
+//3.2
+let showAnyMovie = { (movie: String) in
+    print("Ich möchte mir als nächstes \(movie) angucken.")
+}
+showAnyMovie("Schneewittchen")
+
+
+//3.3
+var wuerfel: (Int) -> Int = { meineZahl in
+    return Int.random(in: 1...meineZahl)
+}
+print(wuerfel(6))
+print(wuerfel(20))
+
+
+//3.4
+let bestMovies = movies.filter { $1 >= 8.0 }
+print("Beste Filme sind \(bestMovies)")
 
